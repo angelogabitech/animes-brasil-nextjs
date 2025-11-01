@@ -2,19 +2,27 @@
 
 import styled from "styled-components";
 import Link from "next/link";
+import Header from "@/components/Header"; // ✅ importa o Header
 
 export default function Home() {
   return (
-    <Container>
-      <Content>
-        <Title>Página dedicada a fãs de animes! 🎌</Title>
-        <Subtitle>Explore, descubra e compartilhe seus animes favoritos.</Subtitle>
+    <>
+      <Header /> {/* ✅ adiciona o cabeçalho fixo */}
+      <Container>
+        <Content>
+          <Title>Página dedicada a fãs de animes! 🎌</Title>
+          <Subtitle>
+            Explore, descubra e compartilhe seus animes favoritos.
+          </Subtitle>
 
-        <ButtonWrapper>
-          <CadastrarButton href="/animes/novo">+ Cadastrar Anime</CadastrarButton>
-        </ButtonWrapper>
-      </Content>
-    </Container>
+          {/* <ButtonWrapper>
+            <CadastrarButton href="/animes/novo">
+              + Cadastrar Anime
+            </CadastrarButton>
+          </ButtonWrapper> */}
+        </Content>
+      </Container>
+    </>
   );
 }
 
@@ -27,6 +35,7 @@ const Container = styled.div`
   background: linear-gradient(135deg, #5a76a4, #240045);
   color: white;
   text-align: center;
+  padding-top: 4rem; /* 🔹 espaço para o header fixo */
 `;
 
 const Content = styled.div`

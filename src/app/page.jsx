@@ -10,11 +10,35 @@ export default function Home() {
       <Header /> {/* ✅ adiciona o cabeçalho fixo */}
       <Container>
         <Content>
-          <Title>Página dedicada a fãs de animes! 🎌</Title>
+          <Title>Página dedicada aos fãs de futebol</Title>
           <Subtitle>
-            Explore, descubra e compartilhe seus animes favoritos.
+            Explore, descubra e compartilhe seus jogadores favoritos e também os melhores jogos!!
           </Subtitle>
+          <Subtitle>
+            Ranking Maiores Jogadores da História:
+            <br>
+            </br>
+            Messi
+              <br></br>
+            Pelé
+              <br></br>
+            Maradona
+              <br></br>
+           The GOAT👑:Cristiano Ronaldo
+              <br></br>
+            Cruyff
+              <br></br>
+            Ronaldo
+              <br></br>
+            Zidane
+              <br></br>
+            Beckenbauer
+              <br></br>
+            Di Stefano
+              <br></br>
+            Ronaldinho Gaúcho
 
+          </Subtitle>
           {/* <ButtonWrapper>
             <CadastrarButton href="/animes/novo">
               + Cadastrar Anime
@@ -32,7 +56,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(135deg, #5a76a4, #240045);
+  background: linear-gradient(135deg, #00ffffff, #240045);
   color: white;
   text-align: center;
   padding-top: 4rem; /* 🔹 espaço para o header fixo */
@@ -61,7 +85,7 @@ const ButtonWrapper = styled.div`
 `;
 
 const CadastrarButton = styled(Link)`
-  background-color: #10b981;
+  background-color: #7104ffff;
   color: white;
   padding: 0.9rem 1.8rem;
   border-radius: 10px;
@@ -71,7 +95,7 @@ const CadastrarButton = styled(Link)`
   transition: background-color 0.25s ease, transform 0.15s ease;
 
   &:hover {
-    background-color: #059669;
+    background-color: #ea00ffff;
     transform: scale(1.05);
   }
 `;
